@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root{
+--Nutmeg: hsl(14, 45%, 36%);
+--Dark-Raspberry: hsl(332, 51%, 32%);
+--Rose-White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light-Grey: hsl(30, 18%, 87%);
+--Wenge-Brown: hsl(30, 10%, 34%);
+--Dark-Charcoal: hsl(24, 5%, 18%);
+}
+h1,h2{
+    font-family: "Young Serif", serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    background: var(--Eggshell);
+    min-height: 250vh;
+    display: grid;
+    place-content: center;
+    
+}
+#product{
+    background-color: #fff;
+    list-style-position: inside;
+    padding: 2rem;
+    max-width: 51%;
+    margin: auto;
+    border-radius: 10px;
+}
+#product img{
+    width: 100%;
+    border-radius: 10px;
+}
+#product h1{
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--Dark-Charcoal);
+    margin: 1rem 0;
+
+}
+#product p,
+#product .rose ul,
+#product .content ul,
+#product .content ol{
+    color: var(--Wenge-Brown);
+}
+#product .rose{
+    margin: 2rem 0;
+    padding: 0 2rem;
+    background: var(--Rose-White);
+    border-radius: 10px;
+}
+#product .rose h2{
+    padding:1.5rem 0 1rem 0 ;
+    color: var(--Dark-Raspberry);
+    font-family: "Outfit", sans-serif;
+}
+#product .rose ul,
+#product .content ul,
+#product .content ol{
+    list-style-position: outside;
+    padding: 0 0 0 2rem;
+    line-height: 1.6;
+}
+#product .rose ul span,
+#product .content ol li span{
+    font-weight: bolder;
+}
+#product .rose ul li,
+#product .content ul li,
+#product .content ol li{
+    padding: 0 0 10px 1rem;
+}
+#product .content {
+    padding-bottom:1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 0.5px solid var(--Light-Grey);
+}
+#product .content h2,
+#product>h2{
+    color:var(--Nutmeg) ;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+#product .space{
+    margin-bottom: 1.7rem;
+}
+#product .Nutrition{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px 0 10px 30px;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+#product .Nutrition .number{
+    font-weight: bolder;
+}
+@media(max-width:450px){
+    #product{
+        max-width: 100%;
+    } 
+}
